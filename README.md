@@ -13,9 +13,9 @@ Perubahan ini dibuat dari simulasi Laptop B
 
 Saat conflict terjadi, di dalam file akan muncul penanda khusus dari Git. Isi di antara <<<<<<< HEAD dan ======= menunjukkan versi dari branch yang sedang aktif. Sementara isi di antara ======= dan >>>>>>> menunjukkan versi dari branch yang digabungkan.
 
-![conflict](conflict.png)
-![conflict-2](conflict-2.png)
-![merge-conflic](merge-conflict.png)
+![conflict](image/conflict.png)
+![conflict-2](image/conflict-2.png)
+![merge-conflic](image/merge-conflict.png)
 
 # Cara Penyelesaian
 1. Memilih dan ganti teks final misalnya "Profil"
@@ -26,9 +26,9 @@ Saat conflict terjadi, di dalam file akan muncul penanda khusus dari Git. Isi di
 6. Jalankan git commit untuk menyelesaikan merge
 7. Jalankan project untuk memastikan navbar tetap valid
 
-![penyelesaian](penyelesaian.png)
-![penyelesaian-2](penyelesaian-2.png)
-![penyelesaian-merge-conflict](penyelesaian-merge-conflict.png)
+![penyelesaian-merge-conflict](image/penyelesaian-merge-conflict.png)
+![penyelesaian](image/penyelesaian.png)
+![penyelesaian-2](image/penyelesaian-2.png)
 
 # Riwayat Praktikum GIT
 ## Hasil git log -- oneline -- graph -- decorate -- all
@@ -47,4 +47,4 @@ PS D:laragon\www\telkom-company-profile> git log -- oneline -- graph -- decorate
 * 91624e6 feat: tambahkan layout dasar dan stylesheet
 * 80b4b40 chore: inisialisasi project dan dokumentasi awal
 
-![git-log](git-log.png)
+![git-log](image/git-log.png)
