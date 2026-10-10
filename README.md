@@ -3,7 +3,7 @@ Project simulasi HTML, CSS, PHP native, MySQL/MariaDB, dan Git
 
 Perubahan ini dibuat dari simulasi Laptop B
 
-# Simulasi merge conflic
+# Simulasi merge conflict
 1. Berada pada branch main dengan working tree dalam kondisi bersih
 2. Membuat branch baru bernama conflict-navbar
 3. Pada branch conflict-navbar, mengubah teks menu navigasi di file includes/header.php dari Profil menjadi Tentang Kami, lalu melakukan commit
@@ -32,13 +32,16 @@ Saat conflict terjadi, di dalam file akan muncul penanda khusus dari Git. Isi di
 
 # Riwayat Praktikum GIT
 ## Hasil git log -- oneline -- graph -- decorate -- all
-PS D:laragon\www\telkom-company-profile> git log -- oneline -- graph -- decorate -- all
-* 9512f83 (HEAD -> main, origin/main) docs: perbarui README dari Laptop B
+PS D:\laragon\www\telkom-company-profile> git log --oneline --graph --decorate --all
+* b6056f0 (HEAD -> main, origin/main) docs: perbaiki gambar README
+* 04f756d docs: perbaiki screenshot di README
+* 344e428 docs: menambahkab dokumentasi praktikum, screenshot conflict, dan git log
+* 9512f83 (tag: v1.0.0) docs: perbarui README dari Laptop B
 *   4142274 merge: selesaikan conflict navbar
-|\
+|\  
 | * aa1a43a (conflict-navbar) feat: ubah label profil pada branch conflict
 * | a09aa51 style: ubah label profil pada main
-|/
+|/  
 * 2817434 feat: tambahkan informasi fokus pembelajaran
 * 762a179 feat: tambahkan form admin lokal untuk berita
 * d5984df feat: simpan pesan kontak ke database
@@ -47,4 +50,4 @@ PS D:laragon\www\telkom-company-profile> git log -- oneline -- graph -- decorate
 * 91624e6 feat: tambahkan layout dasar dan stylesheet
 * 80b4b40 chore: inisialisasi project dan dokumentasi awal
 
-![git-log](image/git-log.png)
+![log](image/log.png)
