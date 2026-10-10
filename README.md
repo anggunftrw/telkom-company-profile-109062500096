@@ -4,14 +4,31 @@ Project simulasi HTML, CSS, PHP native, MySQL/MariaDB, dan Git
 Perubahan ini dibuat dari simulasi Laptop B
 
 # Simulasi merge conflic
-![simulasi](konflik.png)
-![simulasi](<konflik 2.png>)
-![screenshot merge conflic](<merge conflic.png>)
+1. Berada pada branch main dengan working tree dalam kondisi bersih
+2. Membuat branch baru bernama conflict-navbar
+3. Pada branch conflict-navbar, mengubah teks menu navigasi di file includes/header.php dari Profil menjadi Tentang Kami, lalu melakukan commit
+4. Kembali ke branch main dengan perintah git switch main
+5. Pada branch main, mengubah baris yang sama di includes/header.php dari Profil menjadi Tentang Kampus, lalu melakukan commit
+6. Melakukan merge branch conflict-navbar ke main
+
+Saat conflict terjadi, di dalam file akan muncul penanda khusus dari Git. Isi di antara <<<<<<< HEAD dan ======= menunjukkan versi dari branch yang sedang aktif. Sementara isi di antara ======= dan >>>>>>> menunjukkan versi dari branch yang digabungkan.
+
+![conflict](conflict.png)
+![conflict-2](conflict-2.png)
+![merge-conflic](merge-conflict.png)
 
 # Cara Penyelesaian
-![pemyelesaian](penyelesaian.png)
-![penyelesaian](penyelesaian2.png)
-![screenshot penyelesaian](<Penyelesaian merge conflic.png>)
+1. Memilih dan ganti teks final misalnya "Profil"
+2. Menghapus marker conflict (<<<<<<< HEAD, =======, >>>>>>> conflict-navbar)
+3. Menyimpan file
+4. Jalankan git status. File akan muncul sebagai unmerged sampai di-stage
+5. Jalankan git add includes/header.php
+6. Jalankan git commit untuk menyelesaikan merge
+7. Jalankan project untuk memastikan navbar tetap valid
+
+![penyelesaian](penyelesaian.png)
+![penyelesaian-2](penyelesaian-2.png)
+![penyelesaian-merge-conflict](penyelesaian-merge-conflict.png)
 
 # Riwayat Praktikum GIT
 ## Hasil git log -- oneline -- graph -- decorate -- all
@@ -30,4 +47,4 @@ PS D:laragon\www\telkom-company-profile> git log -- oneline -- graph -- decorate
 * 91624e6 feat: tambahkan layout dasar dan stylesheet
 * 80b4b40 chore: inisialisasi project dan dokumentasi awal
 
-![screenshot git-log](git-log.png.png)
+![git-log](git-log.png)
